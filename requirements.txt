@@ -18,3 +18,4 @@ tornado==6.3.3
 tzdata==2023.3
 virtualenv==20.24.5
 waitress==2.1.2
+whitenoise==6.6.0

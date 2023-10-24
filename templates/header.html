@@ -1,0 +1,37 @@
+{% load static %}
+{% block header %}
+    <div id="header">
+        <div id="header-contact-info" class="d-flex flex-column bg-dark py-2 px-4">
+            <div class="d-flex flex-end">
+                <button class="btn bg-none text-white font-normal"> <i class="fa fa-handshake-simple"></i> Submit a Proposal</button>
+                <button class="btn bg-none text-white font-normal"><i class="fas fa-envelope"></i> Email: support@pekaboom.com</button>
+                <button class="btn bg-none text-white font-normal"><i class="fas fa-phone"></i> Tel: +44 (0)7510 451228</button>
+            </div>
+        </div>
+        <header class="py-3 px-5">
+            <div class="logo">
+                <img src="{% static 'images/Pekaboom%20Logo%20large.png'%}" alt="" >
+            </div>
+            <div class="v-align-middle align-self-center ms-0 me-3">
+                <h1 class="font-lg fw-bold">Pekaboom<span class="ms-1 pb-5 font-lg fw-normal">&reg;</span> <i>Enterprise.</i></h1>
+            </div>
+
+            <div id="header-nav" class="mx-auto">
+                <ul>
+                    <a><li>Home</li></a>
+                    <a><li>About</li></a>
+                    <a><li>Products</li></a>
+                    <a><li>Services</li></a>
+                    <a><li>Team</li></a>
+                    <a><li>Blogs</li></a>
+                    <a><li>Faqs</li></a>
+                    <a><li>Downloads</li></a>
+                </ul>
+            </div>
+
+            <div class="mx-auto">
+                <button class="btn bg-theme px-3 py-2">Start a Project</button>
+            </div>
+        </header>
+    </div>
+{% endblock %}

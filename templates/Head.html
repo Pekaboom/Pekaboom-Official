@@ -1,0 +1,217 @@
+{% extends 'App.html' %}
+
+{% load static %}
+{% block head %}
+    <div id="root">
+        <div class="container-fluid p-0">
+            <section class="mt-3 mb-5 pb-3 center">
+                <h1 class="d-block mx-auto center font-xl">Welcome to {{AppName}}. | <span class="text-secondary">The Next Rated Tech-Giant</span></h1>
+                
+                <div class="grid column-3 no-border inline-table vertical-align-top relative navOffset center" style="font-size:2rem;min-height:98px;">
+                    <h2 class="d-inline-flex fw-bold my-4" id="typewriter"
+                        data-text="We Build..., We Deploy..., And We Maintain., Bringing you the best of Technologies..." data-speed="40"></h2>
+                </div>
+            </section>
+
+            <section class="mt-5 mx-4">
+                <div class="row align-items-center mt-3 relative">
+                    <div class="col-lg-5 col-md-7 d-md-block d-none relative z-index-1 mx-5 px-5">
+                        <div class="banner-img relative">
+                            <img src="{% static 'images/banner/banner1.png'%}" class="banner-img-left" alt="images">
+                            <img class="top-right-dot" src="{% static 'images/banner/top-right-dot.svg'%}" alt="images">
+                            <img class="bottom-left-dot" src="{% static 'images/banner/bottom-left-dot.svg'%}" alt="images">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-12 absolute z-index-2 p-5 bg-dark" style="background:linear-gradient(to left, black 0%, transparent 100%);border-radius:10px;margin-left:25%;">
+                        <div class="banner-content mobile-bg1" style="color: sienna;">
+                            <h5>WE CREATIVE MINDS</h5>
+                            <h1>We&nbsp;are Creative <br>
+                                And Innovative <pre class="">Tech&#45;Company!</pre>
+                            </h1>
+                            <p>Bringing you the best of technologies...</p>
+                            <a class="eg-btn banner-btn hover-btn" href="/contact-us" style="color: #ef7b46;text-decoration: dashed;">
+                                <span>Get a quote for your projects 
+                                    <svg width="51" height="13" viewBox="0 0 51 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path d="M44 1.45465V6.5V11.5454C44 11.7194 44.2068 11.8104 44.3351 11.6928L50 6.5L44.3351 1.30722C44.2068 1.18963 44 1.28063 44 1.45465Z" fill="white" style="fill: #ef7b46;"/>
+                                            <path d="M1 6C0.723858 6 0.5 6.22386 0.5 6.5C0.5 6.77614 0.723858 7 1 7V6ZM44.3351 1.30722L44.673 0.938639L44.673 0.938639L44.3351 1.30722ZM50 6.5L50.3378 6.86858L50.7399 6.5L50.3378 6.13142L50 6.5ZM44.3351 11.6928L44.673 12.0614L44.673 12.0614L44.3351 11.6928ZM1 7H44V6H1V7ZM44.5 6.5V1.45465H43.5V6.5H44.5ZM43.9972 1.67579L49.6621 6.86858L50.3378 6.13142L44.673 0.938639L43.9972 1.67579ZM49.6621 6.13142L43.9972 11.3242L44.673 12.0614L50.3378 6.86858L49.6621 6.13142ZM44.5 11.5454V6.5H43.5V11.5454H44.5ZM43.9972 11.3242C44.1897 11.1478 44.5 11.2843 44.5 11.5454H43.5C43.5 12.1544 44.224 12.4729 44.673 12.0614L43.9972 11.3242ZM44.5 1.45465C44.5 1.71568 44.1897 1.85218 43.9972 1.67579L44.673 0.938639C44.224 0.527072 43.5 0.845576 43.5 1.45465H44.5Z" fill="white" style="fill: #ef7b46;"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="absolute p-3 z-index-1" style="width:min-content;right:20px;top:0;">
+                        <h2 style="font-family:'Saira Condensed';font-size:5.2rem;font-weight:900;opacity:.1;">WE ARE CREATIVE AND INNOVATIVE MINDS</h2>
+                    </div>
+                </div>
+            </section>
+
+            <p class="clear-height">&emsp14;</p>
+
+            <section id="Tech-stacks" class="mt-4">
+                <div class="d-flex flex-column relative">
+                    <h1 class="header-title center py-5 my-5" style="-webkit-text-fill-color: black;"><span class="opacity-06">Tech</span> Stacks</h1>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div class="d-flex flex-column relative">
+                        <img src="{% static 'images/icon/python.svg'%}"/>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="d-flex flex-column relative">
+                        <img src="{% static 'images/icon/Java.png'%}"/>
+                        <h3>Java</h3>
+                    </div>
+                    <div class="d-flex flex-column relative">
+                        <img src="{% static 'images/icon/ReactJs.png'%}"/>
+                        <h3>ReactJs</h3>
+                    </div>
+                    <div class="d-flex flex-column relative">
+                        <img src="{% static 'images/icon/NodeJs.png'%}"/>
+                        <h3>NodeJs</h3>
+                    </div>
+                    <div class="d-flex flex-column relative">
+                        <img src="{% static 'images/icon/HTML5.png'%}"/>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="d-flex flex-column relative">
+                        <img src="{% static 'images/icon/Css3.png'%}"/>
+                        <h3>CSS 3</h3>
+                    </div>
+                    <div class="d-flex flex-column relative">
+                        <img src="{% static 'images/icon/Github.png'%}"/>
+                        <h3>GitHub</h3>
+                    </div>
+                    <div class="d-flex flex-column relative">
+                        <img src="{% static 'images/icon/Mongodb.png'%}"/>
+                        <h3>MongoDb</h3>
+                    </div>
+                    <div class="d-flex flex-column relative">
+                        <img src="{% static 'images/icon/GraphQL.png'%}"/>
+                        <h3>GraphQL</h3>
+                    </div>
+                    <div class="d-flex flex-column relative">
+                        <img src="{% static 'images/icon/Php.png'%}"/>
+                        <h3>PHP</h3>
+                    </div>
+                    <div class="d-flex flex-column relative">
+                        <img src="{% static 'images/icon/YouTrack.svg'%}"/>
+                        <h3>YouTrack</h3>
+                    </div>
+                    <div class="d-flex flex-column relative">
+                        <img src="{% static 'images/icon/BigchainDb.png'%}"/>
+                        <h3>BigchainDB (Blockchain)</h3>
+                    </div>
+                    <div class="d-flex flex-column relative">
+                        <img src="{% static 'images/icon/Django.png'%}"/>
+                        <h3>Django (Python)</h3>
+                    </div>
+                </div>
+            </section>
+
+            <p class="clear-height">&emsp14;</p>
+
+            <section id="Brands" class="mt-4 px-5">
+                <div class="d-flex flex-column relative">
+                    <h1 class="header-title center py-5 my-5">Our Products</h1>
+                </div>
+
+                <div class="d-flex flex-wrap px-5 my-5">
+
+                    <div class="d-flex flex-wrap w-100">
+                        <div class="w-50 p-2">
+                            <div style="background:url('/static/images/HMS/nurse.png');
+                                background-size:150%;
+                                background-position:top right;
+                                width:100%;height:400px;
+                                border-radius:20px;
+                                border-radius: 50px 120px;
+                                box-shadow: inset 10px 10px 10px 0 #000000bd;
+                                transform: translateY(-40px) scale(.8)"></div>
+                        </div>
+                        <div class="d-flex w-50 flex-column relative">
+                            <h2 class="font-xxxl fw-bold">Patient-Centered Hospital Management System (HMS)</h2>
+                            <h3>(Coming Soon!)</h3>
+                            <div class="font-lg">
+                                <p>Have you ever thought of what an Uber-like healthcare system will look like?
+                                Don't worry we are here to deliver an Innovative Healthcare System, giving Healthcare providers more flexibility without compromising patients and consumers ability to choose and make decisions.
+                                This is a Patient-Centered Hospital Management System (HMS), Developed with modern technology and security.</p>
+                                <p><b>Disclaimer:</b> This project was first developed by the Founder of Pekaboom Enterprise as part of his Dissertation Project in the year 2022 at Bournemouth University, UK.<br/>
+                                Continuation of this project is in progress with our skilled tech-engineers to ensure a successful delivery!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="d-flex flex-wrap px-5 my-5">
+
+                    <div class="d-flex flex-row-reverse flex-wrap w-100">
+                        <div class="w-50 p-2">
+                            <div style="background:url('/static/images/bg/tweegley01.png') no-repeat;
+                                background-size: contain;
+                                background-position: center 15px;
+                                width: 100%;
+                                height: 365px;
+                                border-radius: 20px;
+                                border-radius: 50px 50px 20px 20px;
+                                box-shadow: 1px 0px 10px 0 #00000059;
+                                transform: translateY(10px) scale(.9);">
+                            </div>
+                            <div style="background:url('/static/images/bg/tweegley02.png') no-repeat;
+                                background-size: contain;
+                                background-position: center 15px;
+                                width: 100%;
+                                height: 450px;
+                                border-radius: 20px;
+                                border-radius: 20px 20px 50px 50px;
+                                box-shadow: 1px 0px 10px 0 #00000059;
+                                transform: translateY(-10px) scale(.9);">
+                            </div>
+                        </div>
+                        <div class="d-flex w-50 flex-column relative">
+                            <h2 class="font-xxxl fw-bold">Tweegley | World class social-commercial platform</h2>
+                            <h3>(Coming Soon!)</h3>
+                            <div class="font-md">
+                                <p class="font-lg">With Tweegley we present to you the best of amazing features, bringing you day to day life into Digitial Reality, making work, entertainment and business, swift and enjoyable on-the-go</p>
+                                <p><b>Some of the amazing features includes:</b>
+                                    <ul class="font-lg">
+                                        <li><b class="fw-bolder">Decentralized Web Store |</b> Buy and Sell products without Hassel</li>
+                                        <li><b class="fw-bolder">Decentralized Social Media Platform |</b> Post and share contents with you friends, love ones and business community while receiving royalties / earnings for your contents shared on our platform.</li>
+                                        <li><b class="fw-bolder">Job Center |</b> For organizations and Freelancers</li>
+                                        <li><b class="fw-bolder">Strictly monitored and Implemented Cyber Security Systems</b></li>
+                                        <li><b class="fw-bolder">Live Streaming</b></li>
+                                        <li><b class="fw-bolder">Integrated Healthcare services</b></li>
+                                        <li><b class="fw-bolder">Secured Mobile Wallet</b></li>
+                                        <li><b class="fw-bolder">Secure and Revolutionized Dating Services</b></li>
+                                        <li><b class="fw-bolder">Smooth and Responsive User Interface to navigate through services</b></li>
+                                        <li><b class="fw-bolder">Cross-platform Implementation</b></li>
+                                        <li><b class="fw-bolder">24/7 Support services</b></li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="d-flex flex-row-reverse flex-wrap w-100">
+                        <div class="d-flex w-50 flex-column relative">
+                            <h2 class="font-xxxl fw-bold">And Many More To Come ...</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="services" class="mt-4 bg-dark my-5">
+                <div class="d-flex flex-column relative">
+                    <h1 class="header-title center py-5 mt-5 no-shadow">Our Services</h1>
+                </div>
+            </section>
+            
+            <p class="clear-height">&emsp14;</p>
+
+        </div>
+    </div>
+{% endblock %}

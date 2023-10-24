@@ -1,0 +1,197 @@
+.banner-img, .banner-img img:nth-of-type(1) {
+    width: 100%;
+    border: 8px solid #515151;
+}
+.top-right-dot {
+    position: absolute;
+    width: 60%;
+    top: -20px;
+    right: -20px;
+    opacity: .4;
+}
+.bottom-left-dot {
+    position: absolute;
+    width: 60%;
+    bottom: -20px;
+    left: -20px;
+    opacity: .4;
+}
+.banner-text-bg {
+    position: absolute;
+}
+body > #root > div > section.mt-4.bg-dark {
+    background: linear-gradient(to left, #000 0%, transparent 100%);
+}
+body header * {
+    transform: scale(.94);
+}
+#services {
+    min-height: 400px;
+}
+
+#Tech-stacks > div:nth-child(2) > div {
+    width: 150px;
+    height: 150px;
+}
+#Tech-stacks > div:nth-child(2) > div  img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+#Tech-stacks > div:nth-child(2) > div {
+    align-self: center;
+    text-align: center;
+    margin: 0px auto 100px auto;
+    min-width: 200px;
+    padding: 30px;
+}
+#Tech-stacks > div:nth-child(2) > div::after {
+    background-color: none;
+    width: 50px;
+    height: 10px;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-44%) skew(98deg, 14deg);
+    bottom: -30px;
+    box-shadow: 170px 25px 10px 0px #00000058;
+}
+#Tech-stacks > div:nth-child(2) > div > h3 {
+    font-weight: bolder;
+    font-family: Monospace;
+    margin-top: 8px;
+    font-size: 1.9rem;
+}
+#Tech-stacks > div:nth-child(2) > div:nth-of-type(1) img {
+    transform: scale(1.6);
+}
+#Tech-stacks > div:nth-child(2) > div:nth-of-type(4) img {
+    transform: scale(1.2);
+}
+#Tech-stacks > div:nth-child(2) > div:nth-of-type(5) img {
+    transform: scale(.7);
+}
+#Tech-stacks > div:nth-child(2) > div:nth-of-type(6) img {
+    transform: scale(.7);
+}
+#Tech-stacks > div:nth-child(2) {
+    transform: scale(.9);
+}
+#services > div:nth-of-type(2) .service {
+    display: flex;
+    flex-direction: column;
+    background: #181818;
+    width: calc(100% / 3);
+    margin: 15px auto;
+    padding: 2rem;
+    transform: scale(.9);
+    color: #b1b1b1;
+    cursor: pointer;
+    border: 1px solid #505050;
+    position: relative;
+}
+#services > div:nth-of-type(2) .service h2 {
+    font-weight: "saira condensed";
+    font-size: 60px;
+    font-weight: 700;
+    word-spacing: 0px;
+    opacity: .1;
+    transition-duration: .5s;
+}
+#services > div:nth-of-type(2) .service h1 {
+    font-weight: "saira condensed";
+    font-size: 30px;
+    font-weight: 700;
+    word-spacing: 0px;
+    margin: auto;
+    padding-top: 2rem;
+    transition-duration: .5s;
+    text-align: center;
+    align-self: center;
+}
+#services > div:nth-of-type(2) .service > div {
+    justify-content: space-between;
+}
+#services > div:nth-of-type(2) .service > div > div {
+    width: 40%;
+    border-right: 10px solid transparent !important;
+    padding-bottom: 5px;
+}
+#services > div:nth-of-type(2) .service > div > div img {
+    mix-blend-mode: luminosity;
+    transition-duration: 3s;
+}
+#services > div:nth-of-type(2) .service > div > div svg {
+    width: 100%;
+    height: 100%;
+    fill: #b1b1b1;
+    transition-duration: .3s;
+}
+#services > div:nth-of-type(2) .service::before {
+    content: "";
+    background: #ff0658;
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    color: #ff0658;
+    border: 0;
+    top: 0;
+    left: 0;
+    transition: .3s all .6s;
+    z-index: 4;
+}
+#services > div:nth-of-type(2) .service > div::before {
+    content: "";
+    background: #ff0658;
+    width: 2px;
+    height: 0px;
+    position: absolute;
+    border: 0;
+    top: 0;
+    right: -1px;
+    transition: .5s all .1s;
+    z-index: 4;
+}
+#services > div:nth-of-type(2) .service:hover::before {
+    width: 100%;
+    height: 2px;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+#services > div:nth-of-type(2) .service:hover > div::before {
+    width: 2px;
+    height: 100%;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+#services > div:nth-of-type(2) .service:hover h2 {
+    color: #ff0658;
+    opacity: 1;
+}
+#services > div:nth-of-type(2) .service:hover h1 {
+    color: #ffd2ab;
+}
+#services > div:nth-of-type(2) .service:hover > div > div img {
+    mix-blend-mode: hard-light;
+    transition-duration: 3s;
+}
+#services > div:nth-of-type(2) .service:hover > div > div svg {
+    fill: #b96925;
+    transition-duration: 1s;
+}
+#Teams #avatar {
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#Teams #avatar img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#Teams .member #description {
+    padding-top: 2rem;
+}

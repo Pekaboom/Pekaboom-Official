@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pekaboom Enterprise &reg; | We build, We Deploy and We Maintain.</title>
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- In built scripts -->
+    <script src="{% static 'js/typewriter.js'%}"></script>
+
+    <!-- In built Styles -->
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}">
+    <link rel="stylesheet" href="{% static 'css/header.css'%}">
+    <link rel="stylesheet" href="{% static 'css/fonts.css'%}">
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+
+</head>
+<body>
+    {% include 'header.html' %}
+
+    {% block content %}
+    
+    {% endblock %}
+    
+</body>
+</html>

@@ -1,0 +1,149 @@
+* {
+    font-family: "Saira Condensed", sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+html {
+    background: whitesmoke;
+}
+body {
+    display: flex;
+    /* background: linear-gradient(to top, black -70%, #fff 50%); */
+    flex-direction: column;
+    margin: 0 auto;
+}
+#root {
+    margin: 0 auto;
+    max-width: 1520px;
+    /* border: 1px solid #eaeaea; */
+}
+a {
+    cursor: pointer !important;
+}
+p, b, li {
+    font-size: inherit;
+}
+.no-shadow {
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+button, .btn {
+    outline: none;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+.logo {
+    display: flex;
+    vertical-align: middle;
+    align-self: center;
+}
+.logo img {
+    width: 50px;
+}
+.v-align-middle {
+    vertical-align: middle;
+}
+.align-self-center {
+    align-self: center;
+}
+.flex-start {
+    align-self: flex-start;
+}
+.flex-end {
+    align-self: flex-end;
+}
+.bg-theme {
+    background: #ff0658;
+    color: #fff;
+}
+.text-theme {
+    color: #ff0658;
+}
+.text-theme-dark {
+    color: #6f0327;
+}
+.center {
+    text-align: center;
+    align-self: center;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.z-index-1 {
+    z-index: 1;
+}
+.z-index-2 {
+    z-index: 2;
+}
+.opacity-01 {
+    opacity: 0.1;
+    font-size: inherit;
+}
+.opacity-02 {
+    opacity: 0.2;
+    font-size: inherit;
+}
+.opacity-03 {
+    opacity: 0.3;
+    font-size: inherit;
+}
+.opacity-04 {
+    opacity: 0.4;
+    font-size: inherit;
+}
+.opacity-05 {
+    opacity: 0.5;
+    font-size: inherit;
+}
+.opacity-06 {
+    opacity: 0.6;
+    font-size: inherit;
+}
+.opacity-07 {
+    opacity: 0.7;
+    font-size: inherit;
+}
+.opacity-08 {
+    opacity: 0.8;
+    font-size: inherit;
+}
+.opacity-09 {
+    opacity: 0.9;
+    font-size: inherit;
+}
+.opacity-1 {
+    opacity: 1;
+    font-size: inherit;
+}
+.clear-height {
+    display: block;
+    margin: 30px 0;
+}
+#header-contact-info {
+    background: linear-gradient(to right, #1c1c1c -20%, #ff0658 10%, #1c1c1c 154%);
+}
+#header-contact-info * {
+    word-spacing: 2px;
+}
+.blink {
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes blink {
+    from {
+        opacity: .1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media all and (min-with: 1521px) {
+    body {
+        border: 1px solid #eaeaea;
+    }
+}
